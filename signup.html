@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Log In Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family, CircularSpTitle,CircularSpTitle-Tall,CircularSp-Arab,CircularSp-Hebr,CircularSp-Cyrl,CircularSp-Grek,CircularSp-Deva,var(--fallback-fonts,sans-serif));
+}
+body{
+    background-color: rgb(37, 37, 35);
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Spotify 2 logo.jpg">
+            </a>
+            
+        <div>
+            
+    </header>
+    
+    <main>
+            
+        <div class="mainn">
+            <h1>Log in to Spotify</h1>
+        
+            <div class="account-connect">
+                <a href="http://127.0.0.1:5501/spotify/main.html"><button class="a-c-btn" id="g"><img src="google.jpg"><span>Continue with Google</span></button><br></a>
+                <a href="http://127.0.0.1:5501/spotify/main.html"><button class="a-c-btn" id="f"><img src='facebook.png'><span>Continue with Facebook</span></button><br></a>
+                <a href="http://127.0.0.1:5501/spotify/main.html"><button class="a-c-btn" id="a"><img src='apple2.png'><span>Continue with Apple</span></button><br></a>
+                <a href="http://127.0.0.1:5501/spotify/main.html"><button class="a-c-btn" id="a"><span>Continue with phone number</span></button></a>
+            </div>
+        <hr>
+       <div class="log-in">
+        <form>
+            <label>Email or username</label><br>
+            <input type="text" placeholder="Email or username">
+            <br>
+            <label>Password</label><br>
+            <input type="text" placeholder="Password">
+
+            <div class="switch">
+                <input type="checkbox" id="switch" checked>
+                <label for="switch"></label>
+                <span>Remember me</span>
+            </div>
+                <button type="submit">Log In</button>
+            <br>
+            <a href="#">Forget your password?</a>
+        </form>
+       </div>
+
+       <hr>
+
+      <div class="last">
+        <span>Don't you have an account? </span> <a href="#" >Sign up for spotify</a>
+      </div>
+
+    </div>
+    </main>
+<footer>
+    <br><br>
+    <p>This site is protected by reCAPTCHA and the Google <u> Privacy Policy  </u>  and <u> Trems of Service  </u> apply. </p>
+</footer>
+    
+</body>
+</html>

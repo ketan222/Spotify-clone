@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="base flex ">
+        <div class="box-left  ">
+            <nav class="nav1 radius ">
+                <div class="home selected-icon cursor">
+                    <!-- <ion-icon name="home-outline " class="home-icon"></ion-icon> -->
+                    <svg id="i-home" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"
+                        class="home-icon cursor  icon" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2">
+                        <path d="M12 20 L12 30 4 30 4 12 16 2 28 12 28 30 20 30 20 20 Z" />
+                    </svg>
+                    <h3 class="home-text navi-heads cursor">Home</h3>
+                </div>
+
+
+
+                <div class="hover-text search">
+                    <svg viewBox="0 0 24 24" class="search-icon icon " xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m16.9994165 16.2923098 3.8541369 3.8541368c.1952621.1952622.1952621.5118446 0 .7071068-.1952622.1952621-.5118446.1952621-.7071068 0l-3.8541368-3.8541369c-1.4103486 1.2450743-3.2630999 2.0005835-5.2923098 2.0005835-4.418278 0-8-3.581722-8-8s3.581722-8 8-8 8 3.581722 8 8c0 2.0292099-.7555092 3.8819612-2.0005835 5.2923098zm-5.9994165 1.7076902c3.8659932 0 7-3.1340068 7-7 0-3.86599325-3.1340068-7-7-7-3.86599325 0-7 3.13400675-7 7 0 3.8659932 3.13400675 7 7 7z" />
+                    </svg>
+
+                    <h3 class="search-text navi-heads">Search</h3>
+                </div>
+
+
+
+            </nav>
+            <section class="library radius">
+                <div class="your-library ">
+                    <div class="library-holder hover-text">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="library-icon  cursor icon" viewBox="0 0 512 512">
+                            <rect rx="16" ry="16" fill="none" stroke="currentColor" stroke-linejoin="round"
+                                stroke-width="32" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" d="M112 224h128M112 400h128" />
+                            <rect x="112" y="160" width="128" height="304" rx="16" ry="16" fill="none"
+                                stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                            <rect x="256" y="48" width="96" height="416" rx="16" ry="16" fill="none"
+                                stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                            <path
+                                d="M422.46 96.11l-40.4 4.25c-11.12 1.17-19.18 11.57-17.93 23.1l34.92 321.59c1.26 11.53 11.37 20 22.49 18.84l40.4-4.25c11.12-1.17 19.18-11.57 17.93-23.1L445 115c-1.31-11.58-11.42-20.06-22.54-18.89z"
+                                fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" />
+                        </svg>
+                        <p class="cursor navi-heads">Your Library</p>
+                    </div>
+                    <div class="add-library-holder">
+                        <button class="add-playlist-icon">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" icon hover-text cursor"
+                                viewBox="0 0 512 512">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="32" d="M256 112v288M400 256H112" />
+                            </svg>
+                        </button>
+                        <button class="show-more-icon">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class=" icon hover-text cursor"
+                                viewBox="0 0 512 512">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="48" d="M268 112l144 144-144 144M392 256H100" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="playlist ">
+                    <button class="playlist-btn cursor">
+                        <p>Playlists</p>
+                    </button>
+                </div>
+                <div class="search-playlist  ">
+                    <svg viewBox="0 0 24 24" class="search-icon2 not-selected-icon hover-text cursor icon "
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m16.9994165 16.2923098 3.8541369 3.8541368c.1952621.1952622.1952621.5118446 0 .7071068-.1952622.1952621-.5118446.1952621-.7071068 0l-3.8541368-3.8541369c-1.4103486 1.2450743-3.2630999 2.0005835-5.2923098 2.0005835-4.418278 0-8-3.581722-8-8s3.581722-8 8-8 8 3.581722 8 8c0 2.0292099-.7555092 3.8819612-2.0005835 5.2923098zm-5.9994165 1.7076902c3.8659932 0 7-3.1340068 7-7 0-3.86599325-3.1340068-7-7-7-3.86599325 0-7 3.13400675-7 7 0 3.8659932 3.13400675 7 7 7z" />
+                    </svg>
+                    <div class="recent hover-text">
+                        <p class="recent-text cursor navi-heads">Recents</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="recent-icon hover-text icon cursor">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                    </div>
+                </div>
+                <div class="playlists  ">
+                    <div class="playlist1 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #1</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                        <div class="my-playlist-n-delete-edit">
+                            <button class="delete-icon-holder">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="delete-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+                                  </svg>                                  
+                            </button>
+                            <button class="edit-icon-holder">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="edit-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0" />
+                                  </svg>
+                                  
+                            </button>
+                        </div>
+                    </div>
+                    <div class="playlist2 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #2</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                    <div class="playlist3 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #3</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                    <div class="playlist4 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #4</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                    <div class="playlist5 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #5</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                    <div class="playlist6 cursor playlist-n ">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #6</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                    <div class="playlist7 playlist-n  cursor">
+                        <div class="music ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="music-icon ">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 9 10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z" />
+                            </svg>
+
+                        </div>
+                        <div class="my-playlist-n ">
+                            <p class="playlist-names">My Playlist #7</p>
+                            <p class="playlist-creator">Playlist . kylet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="box-right radius ">
+            <nav class="nav2">
+                <div class="whats-new radius display-none">
+                    <p>What's new</p>
+                </div>
+                <div class="navigation-arrows">
+                    <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="arrow-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                        </svg>
+                    </div>
+                    <div class="arrow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="arrow-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="navigation-buttons">
+                    <button class="explore-premium-btn zoom transition">
+                        <p class="explore-text">Explore Premium</p>
+                    </button>
+                    <button class="install-app-btn zoom transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="install-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+
+                        <p class="install-app-text">Install App</p>
+                    </button>
+                    <button class="notification zoom transition notification-real"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="bell-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                        </svg></button>
+                    <button class="notification zoom transition">
+                        <div class="name-person">
+                            <p>K</p>
+                        </div>
+                    </button>
+                </div>
+            </nav>
+
+            <section class="my-playlist-opened display-none">
+                <section  class="playlist-opened ">
+                    <div class="playlist-opened-first ">
+                        <div class="large-music-holder-in-playlist-opened ">
+                            <div class="large-music-icon-holder-in-playlist-opened">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="playlist-opened-music-icon">
+                                    <path fill-rule="evenodd" d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z" clip-rule="evenodd" />
+                                </svg>                              
+                            </div>
+                        </div>
+                        <div class="large-text-holder-in-playlist-opened ">
+                            <div class=""></div>
+                            <div class="">
+                                <div class="playlist-opened-text1 "><span>Playlist</span></div>
+                                <div class="playlist-opened-text2 "><span>My Playlist</span></div>
+                                <div class="playlist-opened-text3 "><span>Kylet . 18 songs</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-second  ">
+                        <div class="playlist-opened-play-btn-container ">
+                            <div class="playlist-opened-play-btn zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="playlist-opened-play-icon">
+                                    <path
+                                        d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                                </svg>
+                            </div>
+                            <div class="playlist-opened-list-btn">
+                                <span>List</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playlist-opened-list-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-third  ">
+                        <div class="head-of-songs ">
+                            <span class=" first">#</span>
+                            <span class=" center-vertically">Title</span>
+                            <span class=" center-vertically">Album</span>
+                            <span class=" center-vertically">Date added</span>
+                            <div class="icon-container center-vertically">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icon ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>  
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">1</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">2</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">3</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">4</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">5</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">6</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">7</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">8</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">9</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">10</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">11</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">12</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">13</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">14</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">15</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">16</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">17</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">18</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-fourth ">
+                        <footer class="footer ">
+                            <div class="footer-text">
+                                <div class="footer-text1 ">
+                                    <span class="first-text">Company</span>
+                                    <span class="secondary-text">About</span>
+                                    <span class="secondary-text">Jobs</span>
+                                    <span class="secondary-text">For The Record</span>
+                                </div>
+                                <div class="footer-text2">
+                                    <span class="first-text"> Communities</span>
+                                    <span class="secondary-text">For Artists</span>
+                                    <span class="secondary-text">Developers</span>
+                                    <span class="secondary-text">Advertising</span>
+                                    <span class="secondary-text">Investors</span>
+                                    <span class="secondary-text">Vendors</span>
+                                </div>
+                                <div class="footer-text3">
+                                    <span class="first-text"> Useful links</span>
+                                    <span class="secondary-text">Support</span>
+                                    <span class="secondary-text">Free Mobile App</span>
+                                </div>
+                            </div>
+                            <div class="footer-btns">
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                                        <path
+                                            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                                    </svg></button>
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none" />
+                                        <path
+                                            d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z" />
+                                    </svg></button>
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        fill="#ffffff" viewBox="0 0 256 256">
+                                        <path
+                                            d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="playlist-opened-fifth ">
+                        <footer class="copyrights2">
+                            <div class="footer-right2">
+                                <span>Legal</span>
+                                <span>Privacy Center</span>
+                                <span>Privacy Policy</span>
+                                <span>Cookies</span>
+                                <span>About Ads</span>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="footer-left2">
+                                <p>© 2024 Spotify AB</p>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </section>
+
+            <section class="my-playlist-opened2 display-none">
+                <section  class="playlist-opened ">
+                    <div class="playlist-opened-first ">
+                        <div class="large-music-holder-in-playlist-opened ">
+                            <div class="large-music-icon-holder-in-playlist-opened">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="playlist-opened-music-icon">
+                                    <path fill-rule="evenodd" d="M19.952 1.651a.75.75 0 0 1 .298.599V16.303a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.403-4.909l2.311-.66a1.5 1.5 0 0 0 1.088-1.442V6.994l-9 2.572v9.737a3 3 0 0 1-2.176 2.884l-1.32.377a2.553 2.553 0 1 1-1.402-4.909l2.31-.66a1.5 1.5 0 0 0 1.088-1.442V5.25a.75.75 0 0 1 .544-.721l10.5-3a.75.75 0 0 1 .658.122Z" clip-rule="evenodd" />
+                                </svg>                              
+                            </div>
+                        </div>
+                        <div class="large-text-holder-in-playlist-opened ">
+                            <div class=""></div>
+                            <div class="">
+                                <div class="playlist-opened-text1 "><span>Playlist</span></div>
+                                <div class="playlist-opened-text2 "><span>My Playlist</span></div>
+                                <div class="playlist-opened-text3 "><span>Kylet . 18 songs</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-second  ">
+                        <div class="playlist-opened-play-btn-container ">
+                            <div class="playlist-opened-play-btn zoom">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="playlist-opened-play-icon">
+                                    <path
+                                        d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                                </svg>
+                            </div>
+                            <div class="playlist-opened-list-btn">
+                                <span>List</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="playlist-opened-list-icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                                </svg>                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-third  ">
+                        <div class="head-of-songs ">
+                            <span class=" first">#</span>
+                            <span class=" center-vertically">Title</span>
+                            <span class=" center-vertically">Album</span>
+                            <span class=" center-vertically">Date added</span>
+                            <div class="icon-container center-vertically">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icon ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>  
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">1</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">2</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">3</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">4</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">5</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">6</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">7</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">8</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">9</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">10</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">11</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">12</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">13</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">14</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">15</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">16</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">17</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="songs-container  ">
+                            <span class="first  ">18</span>
+                            <div class="center-vertically  ">
+                                <div class="song-img"><img src="song-poster.jpg" alt="error"></div>
+                                <div class="song-text">
+                                    <a href="#" class="song-name">Try Me</a>
+                                    <a href="#" class="singer-of-the-song">Karan Aujla, Ikky</a>
+                                </div>
+                            </div>
+                            <div class="center-vertically  ">
+                                <a href="#" class="album-text">Making Memories</a>
+                            </div>
+                            <div class="center-vertically  ">
+                                <span class="album-text">2 weeks ago</span>
+                            </div>
+                            <div class="  clock-box">
+                                <div >
+                                    <svg class='clock-icons1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#00ff40" viewBox="0 0 256 256"><path d="M240,98a57.63,57.63,0,0,1-17,41L133.7,229.62a8,8,0,0,1-11.4,0L33,139a58,58,0,0,1,82-82.1L128,69.05l13.09-12.19A58,58,0,0,1,240,98Z"></path></svg>                   
+                                </div>
+                                <span>3:34</span>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="clock-icons2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                    </svg>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="playlist-opened-fourth ">
+                        <footer class="footer ">
+                            <div class="footer-text">
+                                <div class="footer-text1 ">
+                                    <span class="first-text">Company</span>
+                                    <span class="secondary-text">About</span>
+                                    <span class="secondary-text">Jobs</span>
+                                    <span class="secondary-text">For The Record</span>
+                                </div>
+                                <div class="footer-text2">
+                                    <span class="first-text"> Communities</span>
+                                    <span class="secondary-text">For Artists</span>
+                                    <span class="secondary-text">Developers</span>
+                                    <span class="secondary-text">Advertising</span>
+                                    <span class="secondary-text">Investors</span>
+                                    <span class="secondary-text">Vendors</span>
+                                </div>
+                                <div class="footer-text3">
+                                    <span class="first-text"> Useful links</span>
+                                    <span class="secondary-text">Support</span>
+                                    <span class="secondary-text">Free Mobile App</span>
+                                </div>
+                            </div>
+                            <div class="footer-btns">
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        viewBox="0 0 512 512">
+                                        <path
+                                            d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                                        <path
+                                            d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                                    </svg></button>
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        viewBox="0 0 256 256">
+                                        <rect width="256" height="256" fill="none" />
+                                        <path
+                                            d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z" />
+                                    </svg></button>
+                                <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                        fill="#ffffff" viewBox="0 0 256 256">
+                                        <path
+                                            d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z">
+                                        </path>
+                                    </svg></button>
+                            </div>
+                        </footer>
+                    </div>
+                    <div class="playlist-opened-fifth ">
+                        <footer class="copyrights2">
+                            <div class="footer-right2">
+                                <span>Legal</span>
+                                <span>Privacy Center</span>
+                                <span>Privacy Policy</span>
+                                <span>Cookies</span>
+                                <span>About Ads</span>
+                                <span>Accessibility</span>
+                            </div>
+                            <div class="footer-left2">
+                                <p>© 2024 Spotify AB</p>
+                            </div>
+                        </footer>
+                    </div>
+                </section>
+            </section>
+            
+            <section class="content">
+                <div class="recently-played navi-heads">
+                    <p>Recently played</p>
+                </div>
+                <div class="recently-played-holder">
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                </div>
+                <div class="top-biggest-hits navi-heads">
+                    <p class="cursor">Top Biggest Hits</p>
+                </div>
+                <div class="played-holder">
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                </div>
+                <div class="top-biggest-hits navi-heads">
+                    <p class="cursor">Top Biggest Hits</p>
+                </div>
+                <div class="played-holder">
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                </div>
+                <div class="top-biggest-hits navi-heads ">
+                    <p class="cursor">Top Biggest Hits</p>
+                </div>
+                <div class="played-holder">
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                    <div class="music-templates cursor">
+                        <div class="play-btn zoom">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="play-icon">
+                                <path
+                                    d="M6.3 2.84A1.5 1.5 0 0 0 4 4.11v11.78a1.5 1.5 0 0 0 2.3 1.27l9.344-5.891a1.5 1.5 0 0 0 0-2.538L6.3 2.841Z" />
+                            </svg>
+                        </div>
+                        <img src="recentlyPlayed.png" alt="error">
+                        <p class="singer-main-text">Sidhu Moose Wala R...</p>
+                        <p class="singer-secondary-text ">With Ammy Virk, Amrit Maan, Karan Aujla and...</p>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer-text">
+                        <div class="footer-text1 ">
+                            <span class="first-text">Company</span>
+                            <span class="secondary-text">About</span>
+                            <span class="secondary-text">Jobs</span>
+                            <a href="http://127.0.0.1:5501/spotify/feedback.html?sex=on#">
+                                <span class="secondary-text">Feedback</span>
+                            </a>
+                        </div>
+                        <div class="footer-text2">
+                            <span class="first-text"> Communities</span>
+                            <span class="secondary-text">For Artists</span>
+                            <span class="secondary-text">Developers</span>
+                            <span class="secondary-text">Advertising</span>
+                            <span class="secondary-text">Investors</span>
+                            <span class="secondary-text">Vendors</span>
+                        </div>
+                        <div class="footer-text3">
+                            <span class="first-text"> Useful links</span>
+                            <span class="secondary-text">Support</span>
+                            <span class="secondary-text">Free Mobile App</span>
+                        </div>
+                    </div>
+                    <div class="footer-btns">
+                        <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                viewBox="0 0 512 512">
+                                <path
+                                    d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                                <path
+                                    d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                            </svg></button>
+                        <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                viewBox="0 0 256 256">
+                                <rect width="256" height="256" fill="none" />
+                                <path
+                                    d="M245.66,77.66l-29.9,29.9C209.72,177.58,150.67,232,80,232c-14.52,0-26.49-2.3-35.58-6.84-7.33-3.67-10.33-7.6-11.08-8.72a8,8,0,0,1,3.85-11.93c.26-.1,24.24-9.31,39.47-26.84a110.93,110.93,0,0,1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8,8,0,0,1,13.65-4.92c.35.35,33.28,33.1,73.54,43.72V88a47.87,47.87,0,0,1,14.36-34.3A46.87,46.87,0,0,1,168.1,40a48.66,48.66,0,0,1,41.47,24H240a8,8,0,0,1,5.66,13.66Z" />
+                            </svg></button>
+                        <button class="insta-btn cursor"><svg xmlns="http://www.w3.org/2000/svg" class="insta-icon"
+                                fill="#ffffff" viewBox="0 0 256 256">
+                                <path
+                                    d="M232,128a104.16,104.16,0,0,1-91.55,103.26,4,4,0,0,1-4.45-4V152h24a8,8,0,0,0,8-8.53,8.17,8.17,0,0,0-8.25-7.47H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,8-8.53A8.17,8.17,0,0,0,167.73,80H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0-8,8.53A8.17,8.17,0,0,0,96.27,152H120v75.28a4,4,0,0,1-4.44,4A104.15,104.15,0,0,1,24.07,124.09c2-54,45.74-97.9,99.78-100A104.12,104.12,0,0,1,232,128Z">
+                                </path>
+                            </svg></button>
+                    </div>
+                </footer>
+                <footer class="copyrights">
+                    <div class="footer-right">
+                        <span>Legal</span>
+                        <span>Privacy Center</span>
+                        <span>Privacy Policy</span>
+                        <span>Cookies</span>
+                        <span>About Ads</span>
+                        <span>Accessibility</span>
+                    </div>
+                    <div class="footer-left">
+                        <p>© 2024 Spotify AB</p>
+                    </div>
+                </footer>
+
+            </section>
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="icon" href="photos-spotify/icon-spotify.svg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.conatiner-feedback{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+}
+.cross-icon{
+    display: inline;
+    float:  right;
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 25px;
+    filter: invert(0.4);
+}
+.navbar-feedback{
+    width: 100%;
+    height: 6rem;
+    background-color: rgb(18,18,18);
+}
+.invert{
+    filter: invert(1);
+    width: 7rem;
+    margin: 2rem 0 1rem 3rem;
+}
+.feedback-box{
+    background-color: rgb(18,18,18);
+    width: 720px;
+    height: 900px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.feedback-heading{
+    color: white;
+    font-size: 3.5rem;  
+    margin-top: 2rem;
+    margin-left: 14.25rem;
+}
+.feedback-form{
+    color: white;
+    display: grid;
+    grid-template-columns: 250px;
+    padding-left: 170px;
+    padding-top: 40px;
+}
+.fname , .lname , .phone-number,.emailfeedback ,.suggestion{
+    padding-left: 30px;
+    width: 500;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+#fname , #lname , #phone-number, #emailfeedback,#suggestion{
+    margin-top: 0.5rem;
+    width: 300px;
+    height: 30px;
+    margin-left: 30px;
+    border: 2px solid rgb(88, 83, 83);
+    background-color: rgb(18,18,18);
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+}
+.lname , .phone-number , .emailfeedback ,.suggestion{
+    margin-top: 1rem;
+}
+
+.radio-box{
+    display: grid;
+    grid-template-columns: repeat(4,40px);
+    margin: 1.5rem 1.5rem;
+}
+#suggestion{
+    height: 100px;
+    padding: 20px;
+}
+.submit-feedback{
+    border: 2px solid black;
+    background-color: rgb(35, 188, 35);
+    margin-top: 2rem ;
+    margin-left: 2rem;
+    width: 300px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer-feedback{
+    background-color: black;
+    height: 80px;
+}
+.footer-feedback-para{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+    </style>
+</head>
+<body>
+    <div class="conatiner-feedback">
+        <div class="navbar-feedback">
+            <img class="spotify-logo-feedback invert" src="photos-spotify/spotify-logo.svg" alt="">
+        </div>
+        <div class="feedback-box">
+            <h1 class="feedback-heading">Feedback</h1>
+            <form action="#" class="feedback-form">
+                <label class="fname" for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="First name" required>
+                <label class="lname" for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Last name" required>
+                <label class="phone-number" for="phone-number">Phone number</label>
+                <input type="text"  id="phone-number" placeholder="+91XXXXX-XXXXX" required>
+                <label class="emailfeedback" for="emailfeedback">Your email</label>
+                <input type="text"  id="emailfeedback" placeholder="Email" required>
+                <div class="radio-box">
+                    <input type="radio" id="male" name="sex">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex">
+                    <label for="female">Female</label>
+                </div>
+                <label class="suggestion" for="suggestion">Feedback</label>
+                <input type="text"  id="suggestion" placeholder="Your Feedback" required>
+                <a href="http://127.0.0.1:5501/spotify/main.html">
+                    <button class="submit-feedback" >Submit</button>
+                </a>
+            </form>
+        </div>
+        <div class="footer-feedback">
+            <p class="footer-feedback-para">Thank`s for your feedback.</p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
